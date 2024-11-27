@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+body{
+    background-image:url("ni.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed; 
+    margin: 0;
+    padding: 0;
+    max-height: 100px;
+
+}
+
+
+            .navbar {
+      display: flex;
+      background-color: #d8a3a3;
+      padding: 10px 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h4 {
+      text-align: left;
+    }
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      text-align: right;
+    }
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color: grey;
+    }
+    .nav-links {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .nav-links li:hover {
+      background: #ff6347;
+      padding: 6px;
+    }
+    main {
+    font-family: Arial, sans-serif;
+    padding-left: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    
+        }    
+         h1{
+            text-align: center;
+            color: white;
+         }
+        h2{
+            text-align: center;
+            color: white; 
+        }
+            .about{
+               display: flex;
+               gap: 40px;
+            }
+            .about img{
+                border-radius: 16px;
+            }
+            .about p{
+                background-color: black;
+                text-align: center;
+                line-height: 1.5;
+                color: rgb(226, 231, 224);
+                font-family: Arial,  sans-serif;
+                justify-content: baseline ;
+            }
+            .Skills {
+                background-color: black;
+                color: white
+            }
+            footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+         </style>
+     </head>
+     
+    <body>
+        <header>
+            <nav class="navbar">
+                <div>
+                    <h4>AKHO</h4>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Portfolio.html"> Home</a></li>
+                    <li><a href="About.html"> About</a></li>
+                    <li><a href="Projects.html"> Projects</a></li>
+                    <li><a href="Contact.html"> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <section id="About">
+            <h1>About Me</h1>
+            <div class="about">
+                <img src="akho.jpg">
+                <div>
+                    <p>I am a conscientious person who works very hard and pay attention to details.<br>
+                        I am flexible, quick to adapt to any environment and eager to learn new adventures.<br>
+                        I have proven record of responsibility, integrity and commitment to a company,<br>
+                       I am comfortable working independently and as a team.</p>
+                <h2>Skills</h2>
+                 <div class="Skills">
+                     <ul>
+                         <li>CCNA</li>
+                         <li>Into in Cyber-Security</li>
+                         <li>Into in IOT</li>
+                         <li>HTML</li>
+                         <li>basic of CSS</li>
+                         <li>basic of JAVA</li>   
+                     </ul>
+                 </div>
+                </div>
+            </div>
+            
+      </section> 
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 AKHO'S Portfolio</p>
+    </footer>
+    </body>
+
+</html>

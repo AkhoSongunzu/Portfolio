@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+     </head>
+     <style>
+    body{
+    background-image: url("ni.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed; 
+    }
+.navbar {
+      display: flex;
+      background-color: #d8a3a3;
+      padding: 10px 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h4 {
+      text-align: left;
+    }
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      text-align: right;
+    }
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color: grey;
+    }
+    .nav-links {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .nav-links li:hover {
+      background: #ff6347;
+      padding: 6px;
+    }
+h1{
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    
+   
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#Projects h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: white;
+}
+
+#Projects p {
+    color: white;
+}
+button{
+    padding-inline: 16px;
+        padding-block: 8px;
+        border: 2px solid green;
+        background-color: green;
+        border-radius: 8px;
+        color: white;
+}
+button:hover{
+    background: rgb(2, 90, 2);
+}
+
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+     </style>
+    <body>
+        <header>
+       
+            <nav class="navbar">
+                <div>
+                    <h4>AKHO</h4>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Portfolio.html"> Home</a></li>
+                    <li><a href="About.html"> About</a></li>
+                    <li><a href="Projects.html"> Projects</a></li>
+                    <li><a href="Contact.html"> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <h1>My Projects</h1>
+      
+        <section id="Projects" class="Project 1">
+            <h3>Project 1</h3>
+                <img src="cat-app.jpg" alt="CatPhotoApp">
+                <P>The purpose of this project was to create a applicattion that will describe the cat behavior</P>
+               <button onclick="location.href='https://akhosongunzu.github.io/CatPhotoApp/'"> Visit the project</button>
+        </section>
+        <section id="Projects" class="Project 2" >
+           <h3>Project 2</h3>
+            <img src="cafe-menu.jpg" alt="Cafe-Menu">
+            <p>The purpose of this project was to create a cafe menu.</p>
+            <button onclick="location.href='https://akhosongunzu.github.io/Cafe-Menu/'"">Visit the Project </button>
+        </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 AKHO'S Portfolio</p>
+        </footer>
+        </body>
+    
+    </html>

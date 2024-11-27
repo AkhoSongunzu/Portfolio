@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+     </head>
+     <style>
+     body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image:url("ni.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed; 
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+      display: flex;
+      background-color: #d8a3a3;
+      padding: 10px 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h4 {
+      text-align: left;
+    }
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      text-align: right;
+    }
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color: grey;
+    }
+    .nav-links {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .nav-links li:hover {
+      background: #ff6347;
+      padding: 6px;
+    }
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline-color: #4CAF50;
+}
+
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+     </style>
+    <body>
+        <main>
+        <header>
+            <nav class="navbar">
+                <div>
+                    <h4>AKHO</h4>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Portfolio.html"> Home</a></li>
+                    <li><a href="About.html"> About</a></li>
+                    <li><a href="Projects.html"> Projects</a></li>
+                    <li><a href="Contact.html"> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button> 
+                <p>Or you can send it via email: <a href="songunzuakho@gmail.com">songunzuakho@gmail.com</a> </p> 
+            </form>  
+        </div>
+        
+    </main> 
+    <footer>
+        <p>&copy; 2024 AKHO'S Portfolio</p>
+    </footer>
+    </body>
+
+</html>

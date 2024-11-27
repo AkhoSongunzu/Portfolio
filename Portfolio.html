@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    body {
+        font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-image: url("ni.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: fixed;
+    }
+    .navbar {
+      display: flex;
+      background-color: #d8a3a3;
+      padding: 10px 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h4 {
+      text-align: left;
+    }
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      text-align: right;
+    }
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color: grey;
+    }
+    .nav-links {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .nav-links li:hover {
+      background: #ff6347;
+      padding: 2px;
+    }
+  
+    h1,h2,h3,h4{
+        margin: 0;
+        padding: 0;
+    }
+    .title{
+        font-weight: 800;
+        font-size: 48px;
+    }
+    .Home {
+      display: flex;
+      gap: 40px;
+    }
+    .Home img {
+      height: 300px;
+      width: 300px;
+    }
+    .Home p {
+      color: white;
+    }
+    .text h2{
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 1px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .hero{
+        padding-top: 64px;
+        margin-inline: 10vw;
+    }
+    .hero h1{
+        color: white ;
+    }
+    .image img{
+        border-radius: 32px;
+    }
+
+    button{
+        padding-inline: 16px;
+        padding-block: 8px;
+        border: 2px solid green;
+        background-color: green;
+        border-radius: 8px;
+        color: white;
+    }
+
+    button:hover{
+        background: rgb(2, 90, 2);
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <h4>AKHO</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="Portfolio.html"> Home</a></li>
+          <li><a href="About.html"> About</a></li>
+          <li><a href="Projects.html"> Projects</a></li>
+          <li><a href="Contact.html"> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Home">
+        <div class="hero">
+          <h1 >Welcome To My portfolio.</h1>
+          <div class="Home">
+            
+            <div class="text">
+              <p>Hello,  i'm </p>
+              <h2 > Akho Songunzu</h2>
+              <h1 class="title">I'm a nertwork engineer.</h1>
+              <p>If you like to learn more about me, you click on the button below.</p>
+              <button onclick="location.href='About.html'">About</button>
+            </div>
+            <div class="image">
+              <img src="ak.jpg">
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 AKHO'S Portfolio</p>
+    </footer>
+  </body>
+</html>
