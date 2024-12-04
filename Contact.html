@@ -13,7 +13,7 @@
     background-image:url("ni.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed; 
+   /* background-position: fixed; */
     margin: 0;
     padding: 0;
 }
@@ -23,6 +23,7 @@
       padding: 10px 20px;
       align-items: center;
       justify-content: space-between;
+      width: 100%;
     }
     h4 {
       text-align: left;
@@ -115,11 +116,22 @@ footer {
     padding: 1px;
     background-color: #333;
     color: white;
-    position: fixed;
+   /* position: fixed;*/
     width: 100%;
     bottom: 0;
 }
 
+@media screen and (max-width: 500px) {
+    .container{
+        margin: 18px;
+        margin-left: 18px;
+        margin-right: 18px;
+        
+    }
+    footer{
+        padding: 12px;
+    }
+}
      </style>
     <body>
         <main>

@@ -10,7 +10,7 @@ body{
     background-image:url("ni.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed; 
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     max-height: 100px;
@@ -24,6 +24,7 @@ body{
       padding: 10px 20px;
       align-items: center;
       justify-content: space-between;
+      width: 100%;
     }
     h4 {
       text-align: left;
@@ -90,10 +91,36 @@ body{
     padding: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
+    
     width: 100%;
     bottom: 0;
 }
+
+    @media screen and (max-width: 500px) {
+        .about{
+            flex-direction: column;
+        }
+
+        main{
+            padding-inline: 20px;
+            /* background: #333; */
+        }
+
+        body{
+            max-height: fit-content;
+        }
+
+        .about p {
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .Skills{
+            padding: 16px;
+            line-height: 1.5;
+        }
+        
+    }
          </style>
      </head>
      
