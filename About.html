@@ -5,19 +5,18 @@
         <meta name="viewport" content="width= device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body{
-    background-image:url("ni.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: gray;
     margin: 0;
     padding: 0;
     max-height: 100px;
 
 }
 
-
+/*
             .navbar {
       display: flex;
       background-color: #0a0a0a46;;
@@ -54,6 +53,7 @@ body{
       background: #ff6347;
       padding: 6px;
     }
+      */
     main {
     font-family: Arial, sans-serif;
     padding-left: 80px;
@@ -73,26 +73,34 @@ body{
                gap: 40px;
             }
             .about img{
-                border-radius: 16px;
+                border-radius: 10px;
+                height: 300px;
+                width: 300px;
             }
             .about p{
-                background-color: black;
+                
                 text-align: center;
                 line-height: 1.5;
                 color: rgb(226, 231, 224);
                 font-family: Arial,  sans-serif;
                 justify-content: baseline ;
+                font-weight: 100px ;
+                padding: 1rem;
+                border-radius: 10px;
             }
             .Skills {
-                background-color: black;
-                color: white
+                
+                color: white;
+                padding: .5rem;
+                margin-bottom: 2rem;
             }
+           
             footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
@@ -126,53 +134,75 @@ body{
      </head>
      
     <body>
-        <header>
-            <nav class="navbar">
+        <header>   
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <div>
-                    <h4>AKHO</h4>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="Portfolio.html"> Home</a></li>
-                    <li><a href="About.html"> About</a></li>
-                    <li><a href="Projects.html"> Projects</a></li>
-                    <li><a href="Contact.html"> Contact</a></li>
+                <a href=""class="navbar-brand">AKHO</a>
+                </div> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a  class="nav-link"href="Portfolio.html"> Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="About.html"> About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Projects.html"> Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Contact.html"> Contact</a></li>
                 </ul>
+              </div>
             </nav>
         </header>
         <main>
         <section id="About">
             <h1>About Me</h1>
             <div class="about">
-                <img src="akho.jpg">
+                
                 <div>
-                    <p> Hello I'm Akho Songunzu,I graduated on 2021 at Walter Sisulu University,<br>
-                        with a diploma in Information Technology specailizing with communicatoin network.<br>
-                        I'm good on designing network topologies, configuring and troblueshooting  LANs, WANs.<br>
-                        I am flexible, quick to adapt to any environment and eager to learn new adventures.<br>
-                        I have proven record of responsibility, integrity and commitment to a company,<br>
+                    <p class="text-light text-sm-start"> I graduated on 2021 at Walter Sisulu University,
+                        with a diploma in Information  Technology specailizing with communicatoin network.
+                        I'm good on designing network topologies, configuring and troblueshooting  LANs, WANs.
+                        I am flexible, quick to adapt to any environment and eager to learn new adventures.
+                        I have proven record of responsibility, integrity and commitment to a company,
                         I am comfortable working independently and as a team.</p>
-                <h2>Skills</h2>
+                        <h2 class="text-sm-start"> EDUCATION & QUALIFICATION</h2>
+                        <ul class="text-light">
+                           <li>Institution: Sangoni Senior Secondary School</li>
+                           <li>Course: National Senior Certificate</li>
+                           <li>Score: Grade 12</li>
+                           <li>Year obtained: 2018</li>
+                        </ul>
+                        <ul class="text-light">
+                           <li>Institution: Walter Sisulu University</li>
+                           <li>Course: Information Technology</li>
+                           <li>Score: National Diploma</li>
+                           <li>Year obtained: 2021</li>
+                        </ul>
+                <h2 class="text-sm-start"> Skills</h2>
                  <div class="Skills">
                      <ul>
-                         <li>CCNA</li>
                          <li>Network Protocols and standards</li>
                          <li>Network Configuration and Management</li>
                          <li>Troblueshooting</li>
                          <li>Wireless Network</li>
                          <li>Cyber-Security</li>
                          <li>HTML</li>
-                         <li>basic of CSS</li>
+                         <li>CSS</li>
+                         <li>Java Script</li>
+                         <li>Bootstrap </li>
+                         <li>Git & GitHub</li>
                          <li>basic of JAVA</li>   
                      </ul>
                  </div>
+                
             </div>
-            
+             
       </section> 
     </main>
     
     <footer>
         <p>&copy; 2024 AKHO'S Portfolio</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 
 </html>
